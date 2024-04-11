@@ -16,7 +16,7 @@ def maxi(cur_max, check):
         return check
     return cur_max
 
-
+result = open('result.txt', 'w')
 files = ['input01.txt', 'input02.txt', 'input03.txt']
 for file in files:
     cur_max = ['', 0]    # 0 - figure, 1 - volume
@@ -61,4 +61,4 @@ for file in files:
             except AssertionError:
                 pass
 
-    print(f'Фігура з найбільшою мірою у файлі {file}: {cur_max}')
+    result.write(f'Фігура з найбільшою мірою у файлі {file}: {cur_max} \n')

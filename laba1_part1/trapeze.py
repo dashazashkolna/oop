@@ -4,6 +4,7 @@ class Trapeze:
         self.b = b
         self.c = c
         self.d = d
+        assert self.exist
 
 
     def exist(self):
@@ -24,6 +25,5 @@ class Trapeze:
         return s
 
 if __name__ == '__main__':
-    t = Trapeze(8, 0, 4, 5)
-    if t.exist():
-        print(t.area())
+    t = Trapeze(8, 25, 9, 4)
+    print(t.area())
